@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
+  reactStrictMode: true,
 };
 
 module.exports = {
-    ...nextConfig,
-    compiler: {
-        // Enables the styled-components SWC transform
-        styledComponents: true,
-    },
-    images: {
-        domains: ["user-images.githubusercontent.com"],
-    },
+  ...nextConfig,
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true,
+  },
+  images: {
+    domains: ["user-images.githubusercontent.com", "raw.githubusercontent.com"],
+  },
 };

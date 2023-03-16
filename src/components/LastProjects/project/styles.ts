@@ -14,9 +14,11 @@ export const InfoBox = styled.div`
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+  gap: 0.3rem;
   box-sizing: border-box;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  max-width: 18.75rem;
 `;
 
 export const ProjectTitle = styled.h1`

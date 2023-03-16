@@ -1,11 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import LinkIcon from "../../../assets/link.svg";
 
 import * as S from "./styles";
 
-export default function Project() {
+interface props {
+  src: string;
+  tecnology: string;
+  title: string;
+  linksite: string;
+}
+
+export default function Project({ src, tecnology, title, linksite }: props) {
   return (
     <S.Container>
       <Image
@@ -15,20 +23,20 @@ export default function Project() {
           borderBottomRightRadius: 0,
           opacity: "60%",
         }}
-        src={
-          "https://user-images.githubusercontent.com/72713975/210123571-60e135bc-cd40-4d2c-9241-29c95d1acaba.png"
-        }
+        src={src}
         width="300"
         height="160"
         alt=""
       />
 
       <S.InfoBox>
-        <S.ProjectTitle>Dogs</S.ProjectTitle>
+        <S.ProjectTitle>{title}</S.ProjectTitle>
         <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-          <S.TecnologyText>React</S.TecnologyText>
+          <S.TecnologyText>{tecnology}</S.TecnologyText>
 
-          <Image src={LinkIcon} alt="" />
+          <Link href={linksite}>
+            <Image src={LinkIcon} alt="" />
+          </Link>
         </div>
       </S.InfoBox>
     </S.Container>

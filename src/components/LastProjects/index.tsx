@@ -11,8 +11,28 @@ export default function LastProjects() {
       </S.LastProjectsText>
 
       <S.ProjectsContainer>
-        <Project />
-        <Project />
+        <Project
+          title="Dogs"
+          tecnology="ReactJS"
+          src=""
+          linksite={"https://dogsbook-devjl.netlify.app/"}
+        />
+        <Project
+          title="Dogs"
+          tecnology="ReactJS"
+          src={
+            "https://user-images.githubusercontent.com/72713975/210123571-60e135bc-cd40-4d2c-9241-29c95d1acaba.png"
+          }
+          linksite={"https://dogsbook-devjl.netlify.app/"}
+        />
+        <Project
+          title="Pizzarias toffanetto"
+          tecnology="React"
+          src={
+            "https://raw.githubusercontent.com/everton-dgn/pizzaria_toffanetto/master/screenshots/desktop.jpg"
+          }
+          linksite={"https://pizzarias-toffanetto.netlify.app/"}
+        />
       </S.ProjectsContainer>
     </S.Container>
   );

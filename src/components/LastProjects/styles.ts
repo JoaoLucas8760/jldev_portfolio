@@ -18,7 +18,11 @@ export const LastProjectsText = styled.h1`
 
 export const ProjectsContainer = styled.div`
   display: flex;
-
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  flex-wrap: wrap;
 `;
