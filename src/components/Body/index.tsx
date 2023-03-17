@@ -3,7 +3,9 @@ import React from "react";
 import * as S from "./styles";
 
 import FlatIcon from "../../assets/icon.svg";
+import WhatsappIcon from "../../assets/whatsapp.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Body() {
   return (
@@ -24,7 +26,26 @@ export default function Body() {
             <S.Name>João Lucas</S.Name>
           </div>
 
-          <S.Role>Front end Developer</S.Role>
+          <div>
+            <S.Role>Front end Developer</S.Role>
+
+            <Link
+              style={{ textDecoration: "none" }}
+              href={
+                "https://api.whatsapp.com/send/?phone=5585996889128&text&type=phone_number&app_absent=0"
+              }
+            >
+              <S.BudgetButton>
+                Faça um orçamento{" "}
+                <Image
+                  style={{ marginLeft: "0.8rem" }}
+                  src={WhatsappIcon}
+                  alt={""}
+                  priority
+                />
+              </S.BudgetButton>
+            </Link>
+          </div>
         </div>
       </S.Box>
       <Image src={FlatIcon} width="400" height="400" alt={""} priority />

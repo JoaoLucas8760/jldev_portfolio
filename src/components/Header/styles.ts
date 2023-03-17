@@ -13,8 +13,25 @@ export const TextName = styled.h1`
   font-size: 2.1rem;
 `;
 
-export const Button = styled.button`
+export const Button = styled.h1`
   background: none;
 
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  &:hover {
+    color: #5222d0;
+    text-decoration: underline;
+  }
+`;
+
+export const ButtonContainer = styled.button`
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  background: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
