@@ -10,6 +10,10 @@ module.exports = {
     styledComponents: true,
   },
   images: {
-    domains: ["user-images.githubusercontent.com", "raw.githubusercontent.com"],
+    domains: [
+      "user-images.githubusercontent.com",
+      "raw.githubusercontent.com",
+      "github.com",
+    ],
   },
 };
