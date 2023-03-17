@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 import LinkIcon from "../../../assets/link.svg";
@@ -29,16 +30,16 @@ export default function Project({ src, tecnology, title, linksite }: props) {
         alt=""
       />
 
-      <S.InfoBox>
-        <S.ProjectTitle>{title}</S.ProjectTitle>
-        <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-          <S.TecnologyText>{tecnology}</S.TecnologyText>
+      <Link href={linksite}>
+        <S.InfoBox>
+          <S.ProjectTitle>{title}</S.ProjectTitle>
+          <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+            <S.TecnologyText>{tecnology}</S.TecnologyText>
 
-          <Link href={linksite}>
             <Image src={LinkIcon} alt="" />
-          </Link>
-        </div>
-      </S.InfoBox>
+          </div>
+        </S.InfoBox>
+      </Link>
     </S.Container>
   );
 }
