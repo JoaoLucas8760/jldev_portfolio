@@ -15,12 +15,14 @@ export const TextName = styled.h1`
 
 export const Button = styled.h1`
   background: none;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
 
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 600;
   transition: 0.3s;
   &:hover {
-    color: #5222d0;
+    color: rgba(188, 60, 216, 1);
     text-decoration: underline;
   }
 `;

@@ -1,4 +1,6 @@
+import About from "@/components/About";
 import Body from "@/components/Body";
+import Footer from "@/components/Foooter";
 import Header from "@/components/Header";
 import LastProjects from "@/components/LastProjects";
 import Services from "@/components/Services";
@@ -11,6 +13,8 @@ export default function Home() {
       <Body />
       <Services />
       <LastProjects />
+      <About />
+      <Footer />
     </div>
   );
 }

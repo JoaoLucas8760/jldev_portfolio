@@ -36,7 +36,7 @@ export default function Body() {
               }
             >
               <S.BudgetButton>
-                Faça um orçamento{" "}
+                SOLICITE UM ORCAMENTO{" "}
                 <Image
                   style={{ marginLeft: "0.8rem" }}
                   src={WhatsappIcon}

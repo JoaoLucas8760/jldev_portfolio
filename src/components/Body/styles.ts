@@ -10,7 +10,7 @@ export const Container = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 `;
 
 export const TextName = styled.h1`

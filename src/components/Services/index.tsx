@@ -57,7 +57,7 @@ export default function Services() {
           <S.TitleService>UI/UX Design</S.TitleService>
 
           <S.SubTitleService>
-            Criação interfaces de usuário, Projeção de Logomarcas, banners e
+            Criação de interfaces de usuário, Projeção de Logomarcas, banners e
             outros elementos de design que proporcione uma experiência de
             usuário excepcional.
           </S.SubTitleService>
